@@ -231,6 +231,66 @@ class DatabaseService {
       'specialty': null,
     });
 
+    // Insert sample patients
+    await db.insert('patients', {
+      'hospital_number': 'HN001',
+      'national_id': '1234567890123',
+      'first_name': 'สมศรี',
+      'last_name': 'รักษาไทย',
+      'date_of_birth': '1980-05-15',
+      'gender': 'female',
+      'address': '123 ถ.สุขใจ ต.สุขใจ อ.สุขใจ จ.กรุงเทพฯ 10100',
+      'phone_number': '0812345678',
+      'religion': 'พุทธ',
+      'marital_status': 'married',
+      'nationality': 'ไทย',
+      'created_at': DateTime.now().toIso8601String(),
+    });
+
+    await db.insert('patients', {
+      'hospital_number': 'HN002',
+      'national_id': '9876543210987',
+      'first_name': 'สมชาย',
+      'last_name': 'สุขใจ',
+      'date_of_birth': '1975-08-20',
+      'gender': 'male',
+      'address': '456 ถ.รื่นรมย์ ต.รื่นรมย์ อ.รื่นรมย์ จ.นนทบุรี 11000',
+      'phone_number': '0898765432',
+      'religion': 'พุทธ',
+      'marital_status': 'single',
+      'nationality': 'ไทย',
+      'created_at': DateTime.now().toIso8601String(),
+    });
+
+    // Insert sample admissions
+    await db.insert('admissions', {
+      'admission_number': 'AN001',
+      'patient_id': 1,
+      'admission_date_time': DateTime.now().subtract(const Duration(days: 3)).toIso8601String(),
+      'admitting_doctor_id': 1,
+      'chief_complaint': 'ปวดท้อง คลื่นไส้ อาเจียน',
+      'present_illness': 'ผู้ป่วยมีอาการปวดท้องตั้งแต่เมื่อวาน ปวดมากขึ้นเรื่อยๆ มีคลื่นไส้ อาเจียน 2 ครั้ง',
+      'provisional_diagnosis': 'Acute gastritis',
+      'ward': 'Medical Ward A',
+      'bed_number': 'A101',
+      'insurance_right': 'หลักประกันสุขภาพถ้วนหน้า',
+      'created_at': DateTime.now().toIso8601String(),
+    });
+
+    await db.insert('admissions', {
+      'admission_number': 'AN002',
+      'patient_id': 2,
+      'admission_date_time': DateTime.now().subtract(const Duration(days: 1)).toIso8601String(),
+      'admitting_doctor_id': 1,
+      'chief_complaint': 'เจ็บหน้าอก หายใจลำบาก',
+      'present_illness': 'ผู้ป่วยมีอาการเจ็บหน้าอกเหมือนมีคนบีบ หายใจลำบาก เหงื่อออก',
+      'provisional_diagnosis': 'Chest pain, rule out MI',
+      'ward': 'CCU',
+      'bed_number': 'CCU01',
+      'insurance_right': 'ประกันสังคม',
+      'created_at': DateTime.now().toIso8601String(),
+    });
+
     // Insert default assessment forms
     await db.insert('assessment_forms', {
       'form_name': 'Fall Risk Assessment Tool',

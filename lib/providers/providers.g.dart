@@ -61,6 +61,27 @@ final admissionRepositoryProvider = Provider<AdmissionRepository>.internal(
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef AdmissionRepositoryRef = ProviderRef<AdmissionRepository>;
+String _$healthcareProviderRepositoryHash() =>
+    r'07e5034052bcd0977939c52adac704a3897fb134';
+
+/// See also [healthcareProviderRepository].
+@ProviderFor(healthcareProviderRepository)
+final healthcareProviderRepositoryProvider =
+    Provider<HealthcareProviderRepository>.internal(
+      healthcareProviderRepository,
+      name: r'healthcareProviderRepositoryProvider',
+      debugGetCreateSourceHash:
+          const bool.fromEnvironment('dart.vm.product')
+              ? null
+              : _$healthcareProviderRepositoryHash,
+      dependencies: null,
+      allTransitiveDependencies: null,
+    );
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef HealthcareProviderRepositoryRef =
+    ProviderRef<HealthcareProviderRepository>;
 String _$vitalSignsRepositoryHash() =>
     r'18416cb7909f1d16a007fc62818ef4cb86d111fd';
 
@@ -80,5 +101,82 @@ final vitalSignsRepositoryProvider = Provider<VitalSignsRepository>.internal(
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef VitalSignsRepositoryRef = ProviderRef<VitalSignsRepository>;
+String _$doctorOrderRepositoryHash() =>
+    r'6632809c45e258abc1e127e952287a3bad83ef64';
+
+/// See also [doctorOrderRepository].
+@ProviderFor(doctorOrderRepository)
+final doctorOrderRepositoryProvider = Provider<DoctorOrderRepository>.internal(
+  doctorOrderRepository,
+  name: r'doctorOrderRepositoryProvider',
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product')
+          ? null
+          : _$doctorOrderRepositoryHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef DoctorOrderRepositoryRef = ProviderRef<DoctorOrderRepository>;
+String _$progressNoteRepositoryHash() =>
+    r'c174d9121f5bff9abceefbb57fed7042b22293a5';
+
+/// See also [progressNoteRepository].
+@ProviderFor(progressNoteRepository)
+final progressNoteRepositoryProvider =
+    Provider<ProgressNoteRepository>.internal(
+      progressNoteRepository,
+      name: r'progressNoteRepositoryProvider',
+      debugGetCreateSourceHash:
+          const bool.fromEnvironment('dart.vm.product')
+              ? null
+              : _$progressNoteRepositoryHash,
+      dependencies: null,
+      allTransitiveDependencies: null,
+    );
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef ProgressNoteRepositoryRef = ProviderRef<ProgressNoteRepository>;
+String _$labResultRepositoryHash() =>
+    r'66965c92c6bbc0303669ca7200fc5e7f4e8f174e';
+
+/// See also [labResultRepository].
+@ProviderFor(labResultRepository)
+final labResultRepositoryProvider = Provider<LabResultRepository>.internal(
+  labResultRepository,
+  name: r'labResultRepositoryProvider',
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product')
+          ? null
+          : _$labResultRepositoryHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef LabResultRepositoryRef = ProviderRef<LabResultRepository>;
+String _$assessmentRepositoryHash() =>
+    r'f9b3fc4b4cf41c29e8aeaf4aacc2871cd32e9309';
+
+/// See also [assessmentRepository].
+@ProviderFor(assessmentRepository)
+final assessmentRepositoryProvider = Provider<AssessmentRepository>.internal(
+  assessmentRepository,
+  name: r'assessmentRepositoryProvider',
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product')
+          ? null
+          : _$assessmentRepositoryHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef AssessmentRepositoryRef = ProviderRef<AssessmentRepository>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package

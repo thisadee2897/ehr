@@ -9,6 +9,11 @@ import '../screens/admissions/admission_detail_screen.dart';
 import '../screens/admissions/admission_form_screen.dart';
 import '../screens/vital_signs/vital_signs_screen.dart';
 import '../screens/vital_signs/vital_signs_form_screen.dart';
+import '../screens/doctor_orders/doctor_order_list_screen.dart';
+import '../screens/doctor_orders/doctor_order_form_screen.dart';
+import '../screens/progress_notes/progress_note_list_screen.dart';
+import '../screens/progress_notes/progress_note_form_screen.dart';
+import '../screens/lab_results/lab_result_list_screen.dart';
 
 class AppRouter {
   static final _rootNavigatorKey = GlobalKey<NavigatorState>();
